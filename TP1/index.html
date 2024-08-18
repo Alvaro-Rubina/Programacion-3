@@ -6,6 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabajo 1</title>
+    <style>
+        table{
+            width: 40%;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        tfoot{
+            font-weight: bold;
+            background-color: rgb(168, 167, 167);
+        }
+    </style>
 </head>
 
 <body>
@@ -15,11 +30,12 @@
             <li><a href="#beneficios">Beneficios</a></li>
             <li><a href="#desventajas">Desventajas</a></li>
             <li><a href="#videodemo">Video demostrativo</a></li>
+            <li><a href="#tablacomp">Tabla comparativa</a></li>
         </ul>
     </header>
     
     <main>
-        <h1 id="#inicio">Inicio</h1>
+        <h1 id="inicio">Inicio</h1>
         <p>
             Esta es una página web <strong>ficticia</strong> donde se están probando distintas herramientas del
             lenguaje HTML, por lo que el contenido que está presente puede no tener ningún sentido, más que el
@@ -27,7 +43,7 @@
         </p>
         <img src="assets/gif-df-1.gif" alt="Gif de demostración">
 
-        <div>
+        <section>
             <h2 id="beneficios">Beneficios</h2>
             <p>
                 En esta sección se listan algunos <em>beneficios</em> sobre X cuestión. <br>
@@ -40,9 +56,9 @@
                     <li>Blablabla</li>
                 </ul>
             </p>
-        </div>
+        </section>
 
-        <div>
+        <section>
             <h2 id="desventajas">Desventajas</h2>
             <p>
                 En esta sección se listan algunas <em>desventajas</em> sobre X cuestión. <br>
@@ -54,14 +70,61 @@
                     <li>Blablabla</li>
                 </ul>
             </p>
-        </div>
+        </section>
 
         <div>
             <h2 id="videodemo">Video demostrativo</h2>
             <video width="640" height="360" controls loop>
                 <source src="assets/lofi-video.mp4" type="video/mp4">
             </video>
+        </div>        
+
+        <div>
+            <h2 id="tablacomp"> Tabla comparativa</h2>
+            <p>En esta sección se muestra un ejemplo de una tabla que comparan dos elementos.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto 1</th>
+                        <th>Producto 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Es blanco</td>
+                        <td>Es negro</td>
+                    </tr>
+                    <tr>
+                        <td>Es caro</td>
+                        <td>Es barato</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total 1</td>
+                        <td>Total 2</td>
+                    </tr>
+                </tfoot>
+            </table>
         </div>
+
+        <section>
+            <h2>Deja tus datos</h2>
+            <p>Deja tus datos para enterarte de las próximas novedades.</p>
+            <form>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="example@gmail.com">
+                </div>
+
+                <button>Enviar</button>
+            </form>
+        </section>
         
     </main>
 
